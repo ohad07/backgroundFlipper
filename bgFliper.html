@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flipper</title>
 </head>
-<body>
+<body id="bgcolor">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="color: rgb(0, 102, 255);" >Color flipper</a>
@@ -28,7 +28,7 @@
             <h2 style="margin-left: 300px; margin-top: 200px;">BACKGRUND COLOR : <span class="color">
                 #f1f5f8
             </span></h2>
-            <button class="btn btn-here" id="btn" style="margin-left: 500px; margin-top: px; border: black 1px solid; border-radius: 10px;width: 100px;">click me</button>
+            <button class="btn btn-here" id="btn" style="margin-left: 500px; margin-top: px; border: black 1px solid; border-radius: 10px;width: 100px;" onclick="document.getElementById('bgcolor').style.backgroundColor='blue'">click me</button>
         </div>
     </main>
 </body>
@@ -43,5 +43,7 @@
         color.textContent = color[randomNumber];
 
     });
+
+    onclick="document.getElementById('btn').backgrondcolor=' black'"
 </script>
 </html>
